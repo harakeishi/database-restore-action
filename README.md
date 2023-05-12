@@ -54,7 +54,7 @@ jobs:
       - name: setup mysql-client 
         run: apt update && apt install -y mysql-client
       - name: backup test
-        uses: pepactions/database-restore-action@main
+        uses: takutakahashi/database-restore-action@main
         with:
           config-path: .database/test.yaml
 ```
